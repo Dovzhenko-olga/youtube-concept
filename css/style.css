@@ -171,10 +171,12 @@ body {
   margin-left: 20px;
 }
 .video-card {
-  width: 250px;
+  max-width: 250px;
+  margin-right: 10px;
 }
 .video-card-recommend {
-  width: 540px;
+  max-width: 540px;
+  margin-right: 10px;
 }
 .video-thumb {
   overflow: hidden;
@@ -271,5 +273,5 @@ body {
   background-color: #ff0000;
   border-radius: 20px;
   border: none;
-  margin-left: 777px;
+  margin-left: 45%;
 }
