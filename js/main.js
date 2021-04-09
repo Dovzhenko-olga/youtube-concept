@@ -54,7 +54,7 @@ const swiper = new Swiper('.channel-slider', {
   const food = new Swiper('.food-slider', {
     // Optional parameters
     loop: true,
-    slidesPerView: 6,
+    slidesPerView: 1,
     spaceBetween: 20,
     breakpoints:{
       1900: {

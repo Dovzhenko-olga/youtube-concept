@@ -193,7 +193,6 @@ body {
   object-fit: cover;
 }
 .recommend {
-  width: 540px;
   height: 300px;
 }
 .video-duration {
@@ -260,6 +259,7 @@ body {
   margin-left: 19px;
 }
 .food-header {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -268,6 +268,9 @@ body {
   margin-bottom: 0;
 }
 .food-button {
+  position: absolute;
+  top: 10px;
+  right: calc(8% + 106px);
   width: 154px;
   height: 40px;
   font-size: 16px;
@@ -277,10 +280,17 @@ body {
   background-color: #ff0000;
   border-radius: 20px;
   border: none;
-  margin-left: 45%;
+}
+.mobile-sidebar {
+  display: none;
 }
 .mobile-search {
   display: none;
+}
+@media (max-width: 1100px) {
+  .food-recomendation {
+    display: none;
+  }
 }
 @media (max-width: 860px) {
   .icons {
@@ -289,8 +299,17 @@ body {
   .user {
     margin-left: auto;
   }
+  .food-button {
+    display: none;
+  }
 }
 @media (max-width: 640px) {
+  .channel {
+    margin-bottom: 0;
+  }
+  .channel-title {
+    display: none;
+  }
   .swiper-wrapper {
     display: flex;
     flex-direction: column;
@@ -316,7 +335,7 @@ body {
     top: -100px;
     left: 0;
     opacity: 0;
-    width: 68%;
+    width: 70%;
     margin-left: 25px;
     transition: top 0.2s;
   }
